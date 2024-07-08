@@ -39,6 +39,7 @@ background-color: aquamarine;
 }
 
 .header {
+display: block;
     width: 100%;
     height:100%;
 }
@@ -49,9 +50,18 @@ background-color: aquamarine;
 }
 .header .header-inner .logo{
     width: 10%;
-    height:100%;
+    height:100px;
     background-color: blueviolet;
 }
-.header-inner .header-menu{
-
+.header-inner ul{
+    position: fixed;
+    width: 90%;
+    height:100px;
+}
+.header-inner ul li{
+    font-weight: bold;
+    
+}
+.header-inner .header-menu img{
+    width: 20px;
 }
