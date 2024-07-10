@@ -7,6 +7,7 @@
 }
 a{
     text-decoration: none;
+    color:#373333;
 }
 ul,li {
   list-style: none;
@@ -15,53 +16,133 @@ img {
     border-style: none;
     vertical-align: middle;
   }
-  html {
-    font-size: 20px;
-  }
   body {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 300;
-    color: #F8F3EA;
-    line-height: 1.14;
-    letter-spacing: 0px;
-    /* 줄바꿈 할때 단어를 기준으로 설정 
-     break-all: 줄바꿈 하지 않는다.
-      */
-    word-break: break-all;
-    /* height: 1000px; */
-  }
+    text-align: center;
+}
+  /* 전체 */
+
 .wrap{
 width: 100%;
-height: 1000px;
+height: 2000px;
 max-width: 1920px;
-min-width: 360px;
+min-width: 100px;
+background-color: yellowgreen;
+}
+/* 해더 */
+.header {
+  width: 100%;
+}
+.header-inner{
+  width: 100%;
+    height:80px;
+    display: flex;
+    border-bottom: 1px solid #000;
+    background-color:rgb(255, 255, 255);
+    align-items: center;
+  }
+  .header-inner .header-logo{
+    width: 20%;
+  }
+  .h-logo{
+    width: 100%;
+  }
+  .header-menu{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    height:100px;
+    font-size: 90%;
+    margin: 0px 50px;
+    padding: 30px  100px;
+  }
+  .header-menu li{
+    font-weight: bold;
+    font-size: 200%;
+    padding: 0 10px;
+  }
+  .header-menu a:hover{
+    color: #000;
+  }
+  .header-inner .header-menu img{
+    width: 25px;
+  }
+  /* 양쪽 여백 및 텍스트 중앙정렬 */
+  .wrap-inner{
+  display: inline-block;
+  width: 80%;
+  }
+/* 메인 */
+.main{
+  width: 100%;
+}
+.main .main-inner{
+  width: 100%;
+position: relative;
+background-color: #F8F3EA;
+}
+.main .main-inner img{
+  width: 100%;
+  position: relative;
+  margin-top: 2px;
+}
+.main-inner .e-text {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+font-size: 250%;
+font-weight: 500;
+font-family:'Times New Roman', Times, serif;}
+
+.main-inner .k-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+font-size: 200%;
+font-weight: 600;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-inner p{
+  font-size: 120%;
+  font-weight: 600;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin: 10px;
+line-height: 60px;
+}
+/* 시그니처 */
+.content{
+  width: 100%;
+  background-color: #fff;
+}
+.content  h1{
+line-height: 60px;
+  font-size: 230%;
+}
+.content-inner{
+  width: 100%;
+  display: flex;
+}
+.content-inner li{
+  width: calc(100% / 6);
+
+}
+.content-inner img {
+width: 100%;
+margin: 15px 0;
+}
+/* shop */
+.shop{
+  width: 100%;
+  position: relative;
+display: flex;
 background-color: aquamarine;
 }
+.shop-product{
+  display: flex;
+  width:(100% / 3)
+}
 
-.header {
-display: block;
-    width: 100%;
-    height:100%;
-}
-.header .header-inner{
-    position: fixed;
-    width: 100%;
-    height:200px;
-}
-.header .header-inner .logo{
-    width: 10%;
-    height:100px;
-    background-color: blueviolet;
-}
-.header-inner ul{
-    position: fixed;
-    width: 90%;
-    height:100px;
-}
-.header-inner ul li{
-    font-weight: bold;
-    
-}
-.header-inner .header-menu img{
-    width: 20px;
-}
+.shop-product ul >li> a >img{
+  width: 100%;
+} 
