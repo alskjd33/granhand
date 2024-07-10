@@ -135,14 +135,15 @@ margin: 15px 0;
 .shop{
   width: 100%;
   position: relative;
-display: flex;
+  display: flex;
 background-color: aquamarine;
 }
-.shop-product{
-  display: flex;
-  width:(100% / 3)
+.shop-top {
+display: flex;
+  /* width: calc(100% / 2); */
 }
 
-.shop-product ul >li> a >img{
-  width: 100%;
-} 
+.shop-top h1{
+  width: 50%;
+
+}
