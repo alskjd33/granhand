@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("responsive.css");
 * {
   margin: 0;
   padding: 0;
@@ -25,19 +26,20 @@ body {
 .wrap {
   width: 100%;
   /* height: 3000px; */
-  max-width: 1920px;
-  min-width: 100px;
+
+  margin: auto;
   /* background-color: yellowgreen; */
 }
 /* 해더 */
 .header {
   width: 100%;
+  border-bottom: 1px solid #000;
 }
 .header-inner {
   width: 100%;
   height: 80px;
   display: flex;
-  border-bottom: 1px solid #000;
+
   background-color: rgb(255, 255, 255);
   align-items: center;
 }
@@ -79,7 +81,7 @@ body {
 .main .main-inner {
   width: 100%;
   position: relative;
-  background-color: #E4D5B6;
+  background-color: #e4d5b6;
 }
 .main .main-inner img {
   width: 100%;
@@ -208,8 +210,7 @@ body {
   height: 485px;
   margin-top: 50px;
   background-color: #414837;
-display: block;
-
+  display: block;
 }
 .event-inner {
   width: 100%;
@@ -249,14 +250,13 @@ display: block;
   margin: 10px;
   font-size: 40px;
   font-weight: lighter;
-  
 }
 .event-text span {
   margin: 30px;
 }
 #price {
   font-size: 50px;
-  text-decoration: line-through  red;
+  text-decoration: line-through red;
   font-style: italic;
 }
 
@@ -266,60 +266,58 @@ display: block;
   font-size: 55px;
 }
 /* <!-- 푸터 --> */
-.footer{
+.footer {
+  margin-top: 100px;
   width: 100%;
   display: flex;
   border-top: 1px solid #000;
   position: relative;
-  top: 500px;
 }
-.footer-inner{
+.footer-inner {
   display: flex;
   width: 100%;
   position: absolute;
   align-items: center;
   background-color: rgb(255, 255, 255);
-
 }
-.footer-inner a img{
-display: block;
-margin: 123px 50px;
-
+.footer-inner a img {
+  display: block;
+  margin: 123px 50px;
 }
 .footer-inner ul {
   line-height: 50px;
   display: flex;
 }
-.footer-inner ul > li{
+.footer-inner ul > li {
   float: left;
   line-height: 40px;
   font-size: 20px;
 }
-.footer-menu{
+.footer-menu {
   display: block;
   position: relative;
 }
-.footer-menu h3{
+.footer-menu h3 {
   margin-bottom: 5px;
 }
-.footer-menu li{
-  padding: 0 50px ;
+.footer-menu li {
+  padding: 0 50px;
   color: #373333;
 }
-.service-menu{
+.service-menu {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 /* .service-menu > a:hover{
   color: #000000;
   font-weight: 1000;
 } */
-.service-menu li, .support-menu li {
-float:left;
+.service-menu li,
+.support-menu li {
+  float: left;
 }
 
-
-.support-menu{
+.support-menu {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
