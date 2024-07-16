@@ -19,7 +19,14 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- css 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <!-- js적용 -->
+    <script src="js/html5shiv.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/respond.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- js연결 -->
     <script src="js/index.js"></script>
   </head>
@@ -99,38 +106,28 @@
               <a href="#">
                 <img src="images/product_susi.png" alt="수지" />
                 <div class="product-name">
-                  <p>
-                    <b>Susie salmon multi perfume</b> <span><b>100ml</b></span>
-                  </p>
-                  <p>
-                    수지 살몬 멀티퍼퓸 <span><b>35,000ml</b></span>
-                  </p>
+                  <h2>Susie salmon multi perfume <b>100ml</b></h2>
+                  <p>수지 살몬 멀티퍼퓸 <b>35,000ml</b></p>
+                  
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/product_susi.png" alt="수지" />
+                <img src="images/product_susi.png" alt="마린" />
                 <div class="product-name">
-                  <p>
-                    <b>Susie salmon multi perfume</b> <span><b>100ml</b></span>
-                  </p>
-                  <p>
-                    수지 살몬 멀티퍼퓸 <span><b>35,000ml</b></span>
-                  </p>
+                  <h2>Marine orchid multi perfume<b>100ml</b></h2>
+                  <p>마린 오키드 멀티퍼퓸<b>35,000ml</b></p>
+                  
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images/product_susi.png" alt="수지" />
+                <img src="images/product_susi.png" alt="규장" />
                 <div class="product-name">
-                  <p>
-                    <b>Susie salmon multi perfume</b> <span><b>100ml</b></span>
-                  </p>
-                  <p>
-                    수지 살몬 멀티퍼퓸 <span><b>35,000ml</b></span>
-                  </p>
+                  <h2>Kyujang multi perfume<b>100ml</b></h2>
+                  <p>규장 멀티퍼퓸<b>35,000ml</b></p>
                 </div>
               </a>
             </li>
@@ -138,14 +135,23 @@
         </div>
         <!-- 이벤트 -->
         <div class="event">
-          <div class="event-discount">
-            <a href="#"><img src="images/event1.png" alt="세트이벤트" /></a>
-          </div>
-          <div class="event-rev">
-            <a href="#"><img src="images/event2.png" alt="리뷰이벤트" /></a>
+          <div class="event-slide">
+            <!-- navigation -->
+            <button class="sw-bt sw-prev">이전</button>
+            <button class="sw-bt sw-next">다음</button>
+            <!-- event 이미지 스와이퍼 적용 -->
+            <div class="swiper sw-event">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/event1.png" alt="세트이벤트" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/event2.png" alt="리뷰이벤트" /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
         <!-- 푸터 -->
         <footer class="footer">
           <div class="footer-inner"></div>
