@@ -1,6 +1,90 @@
 @charset "utf-8";
-@media screen and (max-width: 1859px){
-    .main-inner{
-        font-size: 30px;
-    }
+
+@media screen and (max-width: 1905px) {
+  .footer-menu li {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1843px) {
+  .footer-menu li {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1749px) {
+  .main-inner .e-text {
+    font-size: 200%;
+  }
+  .main-inner .k-text {
+    font-size: 180%;
+  }
+  .main-inner p {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .product-name b {
+    right: 4%;
+  }
+  .product-name {
+    margin: 0 10px;
+  }
+  .shop-down li {
+    padding: 5px;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .main-inner .e-text {
+    font-size: 180%;
+  }
+  .main-inner .k-text {
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 1490px) {
+  .product-name h2 span {
+    display: inline-block;
+    width: 200px;
+    /* 1줄 ... 처리 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 1393px) {
+  .footer-menu li {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .main-inner .e-text {
+    font-size: 170%;
+  }
+  .main-inner .k-text {
+    font-size: 140%;
+  }
+}
+@media screen and (max-width: 1255px) {
+  .product-name h6 span {
+    display: inline-block;
+    width: 170px;
+    /* 1줄 ... 처리 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #content6 {
+    display: none;
+  }
+  .content-inner li {
+    width: calc(100% / 5);
+  }
+  .footer{
+    text-align: left;
+    flex-direction: column;
+  }
+  .footer-menu {
+   flex-direction: column;
+  }
 }

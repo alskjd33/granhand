@@ -200,19 +200,16 @@ display: block;
   display: flex;
 }
 .product-name {
-  margin: 0 80px;
+  margin: 0 20px;
   width: 100%;
   font-size: 20px;
   line-height: 40px;
   text-align: left;
   position: relative;
-/* display: block; */
-  /* flex-wrap: wrap;
-  justify-content: center */
 }
-.product-name  b{
+.product-name b{
 position: absolute;
-right: 30%;
+right: 5%;
 }
 
 /* 이벤트 */
@@ -287,6 +284,8 @@ right: 30%;
   border-top: 1px solid #000;
   position: relative;
   background-color: rgb(255, 255, 255);
+  color: #373333;
+
 }
 .footer-inner {
   display: flex;
@@ -320,12 +319,12 @@ right: 30%;
   display: flex;
   line-height: 180%;
 }
-.footer-menu h3 {
+.footer-menu  h3 {
   margin-bottom: 5px;
 }
 .footer-menu li {
-  padding: 0 50px;
-  color: #373333;
+  padding: 0 20px;
+
 }
 .service-menu {
   display: flex;
@@ -338,4 +337,9 @@ right: 30%;
 .support-menu {
   display: flex;
   flex-direction: column;
+}
+.footer-menu2{
+  margin-bottom: 5px;
+  display: flex;
+  
 }

@@ -13,4 +13,7 @@ window.onload = function () {
             },
 
         })
-    }
+        const proDuct = addEventListener(".product-name", {
+            slidesPerView: 2,
+    })
+}
